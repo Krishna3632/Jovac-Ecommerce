@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "build": "node server.js",
     "seed": "node scripts/seed.js",
     "reset-admin": "node scripts/reset-admin.js",
     "test-admin": "node scripts/test-admin-login.js",

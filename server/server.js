@@ -37,6 +37,10 @@ mongoose.connection.on('reconnected', () => {
   console.log('🔄 MongoDB reconnected');
 });
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to the JOVAC E-commerce API' });
+});
+
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/products', require('./routes/products'));
